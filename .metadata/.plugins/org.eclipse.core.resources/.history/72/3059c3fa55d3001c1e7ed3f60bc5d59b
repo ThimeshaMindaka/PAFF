@@ -1,0 +1,49 @@
+package net.codejava;
+
+import com.paypal.api.payments.Details;
+import com.paypal.api.payments.Payer;
+import com.paypal.api.payments.PayerInfo;
+import com.paypal.api.payments.RedirectUrls;
+
+public class PaymentServices {
+	private static final String CLIENT_ID = "AaPIddgTtO1i_nX6a5VMqIMR3qNZl-8xFRdQR_Dsjp8C9PpHWv0vAFM9CYSvM9EnxlK5q6Ss48V-Bzqe";
+	private static final String CLIENT_SECRET = "ELnluxNGUE8u8b9jIJYWoc2dWSn6OJwd5VhrLZdcbAvXDOyC0S4yfvjpair-yv1gmtsaYZvCU-EBIXB9";
+	private static final String MODE = "sandbox";
+	
+	
+	public String authorizePayment(OrderDetail orderDetail) {
+		Payer payer = getPayerInformation();
+		
+		RedirectUrls redirectUrls = getRedirectURLs();
+		
+		return null;
+	}
+
+	private List<Transaction> getTransactionInformation(OrderDetail orderDetail){
+		Details details = new Details();
+		details.setShipping(orderDetail.getShipping());
+		return null;
+	}
+	
+	private RedirectUrls getRedirectURLs() {
+		RedirectUrls redirectUrls = new RedirectUrls();
+		redirectUrls.setCancelUrl("http://localhost/PayPalTest/cancel.html");
+		redirectUrls.setReturnUrl("http://localhost/PayPalTest/review_payment");
+	
+		return redirectUrls;
+	}
+
+	private Payer getPayerInformation() {
+		Payer payer = new Payer();
+		payer.setPaymentMethod("paypal");
+		
+		PayerInfo payerInfo = new PayerInfo();
+		payerInfo.setFirstName("William")
+				 .setLastName("Peterson")
+				 .setEmail("william.peterson@gmail.com");
+		
+		payer.setPayerInfo(payerInfo);
+		
+		return payer;
+	}
+}

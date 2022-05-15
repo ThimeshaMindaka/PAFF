@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.Payer"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.RedirectUrls"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.Details"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.Amount"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.Item"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.ItemList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.paypal.base.rest.APIContext"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.Links"/>
+    <fullyQualifiedTypeName name="com.paypal.base.rest.PayPalRESTException"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.PayerInfo"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.Transaction"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.ShippingAddress"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.PaymentExecution"/>
+    <fullyQualifiedTypeName name="com.paypal.api.payments.Payment"/>
+</qualifiedTypeNameHistroy>

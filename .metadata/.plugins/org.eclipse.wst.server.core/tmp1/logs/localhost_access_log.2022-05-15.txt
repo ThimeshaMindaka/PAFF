@@ -1,0 +1,7 @@
+127.0.0.1 - - [15/May/2022:08:44:56 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [15/May/2022:08:45:00 +0530] "GET /PayPalTest/authorize_payment HTTP/1.1" 405 751
+127.0.0.1 - - [15/May/2022:08:45:03 +0530] "GET /PayPalTest/authorize_payment HTTP/1.1" 405 751
+127.0.0.1 - - [15/May/2022:08:45:15 +0530] "POST /PayPalTest/authorize_payment HTTP/1.1" 200 251
+127.0.0.1 - - [15/May/2022:14:59:31 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [15/May/2022:15:00:19 +0530] "GET /PayPalTest/checkout.html HTTP/1.1" 304 -
+127.0.0.1 - - [15/May/2022:15:00:25 +0530] "POST /PayPalTest/authorize_payment HTTP/1.1" 200 251
